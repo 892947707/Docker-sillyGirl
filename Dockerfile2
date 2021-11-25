@@ -3,6 +3,7 @@ FROM golang:buster
 WORKDIR /sillyGirl
 
 ENV TZ=Asia/Shanghai
+ENV LANG C.UTF-8
 
 RUN mkdir /etc/sillyGirl \
     && wget https://github.com/892947707/Build_sillyGirl/releases/download/main/sillyGirl_linux_arm64 \
