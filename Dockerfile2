@@ -10,4 +10,4 @@ RUN mkdir /etc/sillyGirl \
     && chmod 777 sillyGirl \
     && go install github.com/br0xen/boltbrowser@2.1
 
-CMD [ "sillyGirl" ]
+CMD [ "/sillyGirl/sillyGirl" ]
