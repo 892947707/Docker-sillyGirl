@@ -8,7 +8,7 @@ on:
   watch:
     types: [started]
   schedule:
-    - cron: 5 */8 * * *
+    - cron: 5 */12 * * *
 
 
 jobs:
