@@ -1,7 +1,7 @@
 FROM golang:buster
 
 WORKDIR /sillyGirl
-COPY config.yaml /sillyGirl/conf/
+
 ENV TZ=Asia/Shanghai
 ENV LANG C.UTF-8
 
