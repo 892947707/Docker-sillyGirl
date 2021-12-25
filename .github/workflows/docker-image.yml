@@ -38,8 +38,8 @@ jobs:
 
     - name: Build the Docker image
       run: |
-           docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/silly:latset
-           docker push ${{ secrets.DOCKER_USERNAME }}/silly:latest
+           docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/silly
+           docker push ${{ secrets.DOCKER_USERNAME }}/silly
 
   build_amd64:
 
