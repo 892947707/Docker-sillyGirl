@@ -9,6 +9,7 @@ RUN mkdir /etc/sillyGirl \
     && wget https://github.com/892947707/Build_sillyGirl/releases/download/main/sillyGirl_linux_arm64 \
     && mv sillyGirl_linux_arm64 sillyGirl \
     && chmod 777 sillyGirl \
-    && go install github.com/br0xen/boltbrowser@2.1
+    && go install github.com/br0xen/boltbrowser@2.1 \
+    && apk add --no-cache tzdata && cp /usr/share/zoneinfo/$TZ /etc/localtime
 
 CMD [ "/sillyGirl/sillyGirl" ]
